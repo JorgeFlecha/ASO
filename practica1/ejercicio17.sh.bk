@@ -1,0 +1,17 @@
+#!/bin/bash
+while true do
+
+read -p "Introduce un número: " num
+read -p "Introduce otro número: " num2
+
+if [ $num -eq 0 ]; then
+	echo "Introduce un numero que no sea 0"
+	exit
+elif [ $num2 -eq 0 ]; then
+	echo "Introduce un número que no sea 0"
+	exit
+else
+	resultado=$(($num + $num2))
+	echo "El resultado es: " $resultado
+fi
+done
